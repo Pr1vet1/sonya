@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+  font-family: "Rubik", sans-serif;
+}
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../img/102765-dikaya_mestnost-pustynya-priroda-oblako-nebo-3840x2160.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: changing 10s infinite;
+}
+
+
+
+@keyframes changing {
+  0%{
+    background-image: url(../img/102765-dikaya_mestnost-pustynya-priroda-oblako-nebo-3840x2160.jpg);
+  }
+  30%{
+    background-image: url(../img/102823-otrazhenie-vodohranilishhe-pustynya-sumerki-rassvet-3840x2160.jpg);
+  }
+  68%{
+    background-image: url(../img/97287-ozero-nebo-boloto-atmosfera-panno-3840x2160.jpg);
+  }
+}
+
+.container{
+  padding: 0 7%;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.wrapper-logo p{
+  font-size: 80px;
+  color: #ffffff;
+}
+
+
+.wrapper nav a{
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 50px;
+}
+.wrapper nav a:first-child{
+  margin-left: 0;
+}
+
+.wrapper nav a:hover{
+  text-decoration: underline;
+
+}
+
+.wrapper-contact{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-contact a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #67798e;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #00000080;
+  transition:all .3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper-contact a i{
+font-size: 23px;
+color: #67798e;
+transition:all .3s ease;
+z-index: 1;
+}
+
+.wrapper-contact a:after{
+content: "";
+width: 50px;
+height: 50px;
+position: absolute;
+transform:  translate(0, 50px);
+border-radius: 50%;
+transition:all .3s ease;
+
+}
+
+.contact-instagram:after{
+  background-color: #da3ce9;
+}
+.contact-telegram:after{
+  background-color: #3dbffc;
+}
+.contact-vk:after{
+  background-color: #2164f5;
+}
+
+.wrapper-contact a:hover{
+transform: translateY(-4px);
+box-shadow: 0px 0px 5px #00000080;
+}
+
+.wrapper-contact a:hover i{
+  color: #ffffff;
+}
+
+.wrapper-contact a:hover:after{
+  transform: translate(0);
+}
+
+
+
+.wrapper__home{
+  margin-top: 100px;
+}
+
+.home-zag{
+  font-size: 180px;
+  color: #ffffff;
+}
+
+.home-text{
+  font-size: 40px;
+  color: #ffffff;
+
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  grid-row-gap: 50px;
+  grid-column-gap: 5px;
+  transform: translateY(-7%);
+  
+}
+
+.card{
+  display: flex;
+  align-items: end;
+  height: 400px;
+  width: 300px;
+  border: 1px solid #67798e;
+  border-radius: 5%;
+  box-shadow: 0px 0px 5px #00000080;
+  transition:all .3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.a{
+  background-image: url(../img/grid/df607c70797d11ee99fbbadf81d486ab_upscaled.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .f:hover, .g:hover, .h:hover{
+  transform: scale(1.05);
+}
+
+.b{
+  background-image: url(../img/grid/cf461c95653c11ee888a2aacdc0146ad_upscaled.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.c{
+  background-image: url(../img/grid/3cd4e12a791e11eebec0b646b2a0ffc1_upscaled.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.d{
+  background-image: url(../img/grid/4c3ac04c79ca11ee9d38aaafe6635749_upscaled.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.e{
+  background-image: url(../img/grid/05_krsk2020.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.f{
+  background-image: url(../img/grid/Aul-Coh-620bbc8023b12.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.g{
+  background-image: url(../img/grid/f102c9b677c311eeb6e0222e7fa838a6_upscaled.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.h{
+  background-image: url(../img/grid/gorod_zdaniia_most_220234_3840x2160.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.item {
+  padding: 5%;
+  color: #ffffff;
+}
+.item p{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.item a{
+  color: #ffffff;
+}
+
+.item a:hover{
+  text-decoration: underline;
+}
